@@ -19,6 +19,7 @@ class CreateBooksTable extends Migration
             $table->integer('item_number');  
             $table->integer('item_amount');  
             $table->datetime('published'); 
+            $table->bigInteger('user_id'); //Add:user_id
             $table->timestamps();
         });
     }
